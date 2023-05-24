@@ -1,0 +1,62 @@
+.toDo {
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  padding: 1rem;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 0.125rem 0.5rem rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+}
+
+.toDo input {
+  position: absolute;
+  inset: 0;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.toDo svg {
+  flex-shrink: 0;
+}
+
+.toDo .onGoingIcon  {
+  color: var(--blue);
+  margin-right: 0.75rem;
+}
+
+.toDo .doneIcon {
+  color: var(--purple-dark);
+  margin-right: 0.75rem;
+}
+
+.toDo label {
+  font-size: 0.875rem;
+  flex-grow: 1;
+  color: var(--gray-100);
+}
+
+.toDo label[data-isdone="true"]{
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.toDo button {
+  border: 0;
+  margin: 0;
+  margin-left: 0.75rem;
+  z-index: 1;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+}
+
+.toDo .deleteIcon {
+  position: absolute;
+  color: var(--gray-300);
+  inset: 0;
+}
